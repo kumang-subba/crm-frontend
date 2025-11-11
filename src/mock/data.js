@@ -1,48 +1,53 @@
 export const KanbanDemoData = [
   {
-    name: "backlog",
+    name: "new leads",
     id: "col-1",
-    description: "Backlogsssss",
+    description: "Recently captured leads awaiting qualification.",
     leads: [
-      { name: "Look into render bug in dashboard", id: "lead1", column: "col-1", order: 0 },
-      { name: "SOX compliance checklist", id: "lead2", column: "col-1", order: 1 },
-      { name: "[SPIKE] Migrate to Azure", id: "lead3", column: "col-1", order: 2 },
-      { name: "Document Notifications service", id: "lead4", column: "col-1", order: 3 },
+      { name: "Acme Corp - Website Inquiry", id: "lead1", column: "col-1", order: 0 },
+      { name: "Globex Ltd - Referral from John D.", id: "lead2", column: "col-1", order: 1 },
+      { name: "Starlight Media - Demo Request", id: "lead3", column: "col-1", order: 2 },
+      { name: "BrightTech Solutions - Trade Show Lead", id: "lead4", column: "col-1", order: 3 },
     ],
   },
   {
-    name: "todo",
+    name: "qualified",
     id: "col-2",
-    description: "How many todo?",
+    description: "Leads that have been contacted and meet qualification criteria.",
     leads: [
       {
-        name: "Research DB options for new microservice",
+        name: "Northwind Traders - Interested in Enterprise Plan",
         id: "lead5",
         column: "col-2",
         order: 0,
       },
       {
-        name: "Postmortem for outage",
+        name: "BlueWave Analytics - Pricing Discussion Scheduled",
         id: "lead6",
         column: "col-2",
         order: 1,
       },
-      { name: "Sync with product on Q3 roadmap", id: "lead7", column: "col-2", order: 2 },
+      {
+        name: "Evergreen Foods - Needs Proposal",
+        id: "lead7",
+        column: "col-2",
+        order: 2,
+      },
     ],
   },
   {
-    name: "doing",
+    name: "negotiation",
     id: "col-3",
-    description: "what we doing?",
+    description: "Leads currently in contract or pricing discussions.",
     leads: [
       {
-        name: "Refactor context providers to use Zustand",
+        name: "UrbanGrid Energy - Proposal Sent",
         id: "lead8",
         column: "col-3",
         order: 0,
       },
       {
-        name: "Add logging to daily CRON",
+        name: "Pinnacle Health - Legal Review Pending",
         id: "lead9",
         column: "col-3",
         order: 1,
@@ -50,12 +55,12 @@ export const KanbanDemoData = [
     ],
   },
   {
-    name: "done",
+    name: "closed won",
     id: "col-4",
-    description: "this is doned",
+    description: "Deals successfully closed and converted to customers.",
     leads: [
       {
-        name: "Set up DD dashboards for Lambda listener",
+        name: "Nova Retail Group - Enterprise Contract Signed",
         id: "lead10",
         column: "col-4",
         order: 0,
