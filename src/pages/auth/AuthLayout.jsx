@@ -7,7 +7,7 @@ const AuthLayout = () => {
     return <Navigate to={"/"} />;
   }
   return (
-    <main className="max-w-screen h-screen flex justify-center items-center">
+    <main className="max-w-screen h-screen overflow-hidden flex justify-center items-center">
       <div className="relative isolate px-6 pt-14 lg:px-8">
         <div
           aria-hidden="true"
