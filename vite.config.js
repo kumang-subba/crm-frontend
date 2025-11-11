@@ -7,7 +7,7 @@ export default defineConfig(({ command }) => {
   const config = { plugins: [react(), tailwindcss()], base: "/" };
   // plugins: [react(), tailwindcss()],
   if (command !== "serve") {
-    config.base = "/crm-frontend";
+    config.base = "/crm-frontend/";
   }
   return config;
 });
