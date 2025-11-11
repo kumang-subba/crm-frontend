@@ -12,7 +12,7 @@ function App() {
   return (
     <AuthProvider>
       <NotificationProvider>
-        <BrowserRouter>
+        <BrowserRouter basename={import.meta.env.DEV ? "/" : "/crm-frontend/"}>
           <Routes>
             <Route index element={<Home />} />
             <Route path="/demo" element={<Demo />} />
